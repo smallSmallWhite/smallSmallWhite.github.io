@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/8 | coder小鹏的博客</title>
+  <title>iOS开发小知识点整理第一期（持续更新） | coder小鹏的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="每天进步一点点。。。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="coder小鹏的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/08/index.html">
+  <meta name="description" content="1.使用系统tabbar时，tabbar上方会有一条线，如果想去掉这条线，添加如下代码即可： 1[self.tabBar setClipsToBounds:YES]; 2.调用系统相机拍照或者录像完成后，返回后出现导航栏上移的问题，效果图如下: 导航栏上移截图 解决办法，检查info.plist文件中是否设置controller-based status bar appearance```字段,如">
+<meta name="keywords" content="ios小技能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS开发小知识点整理第一期（持续更新）">
+<meta property="og:url" content="http://yoursite.com/2017/08/06/iOS开发小知识点整理第一期（持续更新）/index.html">
 <meta property="og:site_name" content="coder小鹏的博客">
-<meta property="og:description" content="每天进步一点点。。。">
+<meta property="og:description" content="1.使用系统tabbar时，tabbar上方会有一条线，如果想去掉这条线，添加如下代码即可： 1[self.tabBar setClipsToBounds:YES]; 2.调用系统相机拍照或者录像完成后，返回后出现导航栏上移的问题，效果图如下: 导航栏上移截图 解决办法，检查info.plist文件中是否设置controller-based status bar appearance```字段,如">
+<meta property="og:updated_time" content="2017-08-06T13:01:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="coder小鹏的博客">
-<meta name="twitter:description" content="每天进步一点点。。。">
+<meta name="twitter:title" content="iOS开发小知识点整理第一期（持续更新）">
+<meta name="twitter:description" content="1.使用系统tabbar时，tabbar上方会有一条线，如果想去掉这条线，添加如下代码即可： 1[self.tabBar setClipsToBounds:YES]; 2.调用系统相机拍照或者录像完成后，返回后出现导航栏上移的问题，效果图如下: 导航栏上移截图 解决办法，检查info.plist文件中是否设置controller-based status bar appearance```字段,如">
   
     <link rel="alternative" href="/atom.xml" title="coder小鹏的博客" type="application/atom+xml">
   
@@ -152,36 +154,109 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-iOS开发小知识点整理第一期（持续更新）" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/06/iOS开发小知识点整理第一期（持续更新）/" class="archive-article-date">
-  	<time datetime="2017-08-06T12:55:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-06</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/06/iOS开发小知识点整理第一期（持续更新）/">iOS开发小知识点整理第一期（持续更新）</a>
+    <h1 class="article-title" itemprop="name">
+      iOS开发小知识点整理第一期（持续更新）
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/08/06/iOS开发小知识点整理第一期（持续更新）/" class="archive-article-date">
+  	<time datetime="2017-08-06T12:55:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.使用系统tabbar时，tabbar上方会有一条线，如果想去掉这条线，添加如下代码即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[self.tabBar setClipsToBounds:YES];</div></pre></td></tr></table></figure>
+<p>2.调用系统相机拍照或者录像完成后，返回后出现导航栏上移的问题，效果图如下:</p>
+<p><a href="http://upload-images.jianshu.io/upload_images/1898413-1a87b3c61b71e4ee.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="external">导航栏上移截图</a></p>
+<p>解决办法，检查info.plist文件中是否设置<figure class="highlight plain"><figcaption><span>controller-based status bar appearance```字段,如果设置，将其改为NO即可，更多关于```View controller-based status bar appearance```的相关知识参考链接[View controller-based status bar appearance](http://blog.csdn.net/yongyinmg/article/details/39928367)</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">3.知道时区，计算不同国家的当前时间的方法如下:</div></pre></td></tr></table></figure></p>
+<p>//timer为时区<br>NSInteger timer = [time_zone integerValue];<br>NSDate <em>currentDate = [NSDate date];<br>NSDateFormatter </em> formatter = [[NSDateFormatter alloc]init];<br>[formatter setDateFormat:@”MM/d HH:mm”];<br>if (timer &gt; 0) {<br>[formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:(8 + timer <em> 3600)]];<br>}else{<br>[formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:(8 + (timer - 1) </em> 3600)]];<br>  }<br>NSString *dateStr = [formatter stringFromDate:currentDate];`</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">4.当tableView的样式选择为plain样式时，分区头就处于悬浮状态，如果不想要这种悬浮状态，则需要将tableView的样式修改为grouped样式，但是修改成grouped样式之后，会发现分区头上面会有一个留白，想要去除留白，则需要实现下面的代理方法，注意不要将高度返回为0，否则将没有效果</div></pre></td></tr></table></figure>
+<p>-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{</p>
+<pre><code>return 0.01;
+</code></pre><p>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">5.设置tabbar背景颜色的方法</div></pre></td></tr></table></figure></p>
+<p>UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SelfWideh, 49)];<br>backView.backgroundColor = [UIColor whiteColor];<br>[self.tabBar insertSubview:backView atIndex:0];<br>self.tabBar.opaque = YES;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">6.选取系统照片，如果想使用原图，可以进行如下设置</div></pre></td></tr></table></figure></p>
+<p>//选取照片时设置<br>imagePicker.allowsEditing = NO;//不允许编辑<br>读取照片时，读取原图<br> UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">7.iOS实现多级界面模态之后的返回</div></pre></td></tr></table></figure>
+<p>UIViewController *rootVC = self.presentingViewController;<br> while (rootVC.presentingViewController) {<br>    rootVC = rootVC.presentingViewController;<br> }<br>[rootVC dismissViewControllerAnimated:YES completion:nil];<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">8.限制TextField输入的内容的长度的方法</div></pre></td></tr></table></figure></p>
+<ul>
+<li><p>(BOOL)textField:(UITextField <em>)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString </em>)string;<br>{  //string就是此时输入的那个字符textField就是此时正在输入的那个输入框返回YES就是可以改变输入框的值NO相反</p>
+<p>  if ([string isEqualToString:@”\n”])  //按会车可以改变<br>  {</p>
+<pre><code>return YES;
+</code></pre><p>  }</p>
+<p>  NSString <em> toBeString = [textField.text stringByReplacingCharactersInRange:range withString:string]; //得到输入框的内容<br>  VerifyCodeCell </em>cell = [self.view viewWithTag:3000];</p>
+<p>  if (cell.pwdTF == textField)  //判断是否时我们想要限定的那个输入框<br>  {</p>
+<pre><code>if ([toBeString length] &gt; 16) { //如果输入框内容大于20则弹出警告
+    textField.text = [toBeString substringToIndex:16];
+    return NO;
+}
+</code></pre><p>  }<br>  return YES;<br>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">9.解决多次present之后返回到指定的界面</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>UIViewController *vc =self.presentingViewController;</p>
+<pre><code>//BondDeviceController要跳转的界面
+
+while (![vc isKindOfClass:[BondDeviceController class]]) {
+
+    vc = vc.presentingViewController;
+
+}
+[vc dismissViewControllerAnimated:YES completion:nil];
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">10.控制输入框中输入的内容都为大写字母的方法</div></pre></td></tr></table></figure>
+<p>-(BOOL)textField:(UITextField <em>)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString </em>)string {</p>
+<pre><code>NSRange lowercaseCharRange;
+lowercaseCharRange = [string rangeOfCharacterFromSet:[NSCharacterSet lowercaseLetterCharacterSet]];
+
+if (lowercaseCharRange.location != NSNotFound) {
+
+    textField.text = [textField.text stringByReplacingCharactersInRange:range
+                                                             withString:[string uppercaseString]];
+    return NO;
+}
+return YES;
+</code></pre><p>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">11.如何修改UITabbarItem上面图片的位置和文字的位置</div></pre></td></tr></table></figure></p>
+<p>PersonalViewController *VC3 = [[PersonalViewController alloc]init];<br>VC3.tabBarItem.title = @”个人”;<br>VC3.tabBarItem.image = [UIImage imageNamed:@”个人灰色”];<br>VC3.tabBarItem.selectedImage = [[UIImage imageNamed:@”个人亮色”] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];<br>//设置文字的位置<br>[VC3.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -5)];<br>//设置图片的位置<br>VC3.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">12.label自适应高度的代码</div></pre></td></tr></table></figure></p>
+<p>SystemInfoCell <em>cell = [self.view viewWithTag:3000];<br>//这里文字的大小一定要和控件的文字大小保持一致<br>NSDictionary </em>attrs = @{NSFontAttributeName : [UIFont fontWithName:@”HiraginoSansGB-W3” size:[self autoScaleW:14]]};<br>CGSize maxSize = CGSizeMake(cell.contentLabel.frame.size.width, MAXFLOAT);<br>// 计算文字占据的高度<br>CGRect rect = [cell.contentLabel.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil];</p>
+<p>```</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -193,46 +268,104 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/06/iOS开发小知识点整理第一期（持续更新）/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/06/hello-world/" class="archive-article-date">
-  	<time datetime="2017-08-06T10:52:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-06</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/06/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -255,8 +388,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
